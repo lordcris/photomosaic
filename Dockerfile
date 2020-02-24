@@ -50,5 +50,4 @@ RUN apt-get update -y && \
 
 COPY requirements.txt /home/requirements.txt
 RUN pip install -r /home/requirements.txt
-RUN echo y | conda remove opencv --force
-RUN echo y | conda install opencv
+RUN echo y | conda remove opencv --force && echo y | conda install opencv
