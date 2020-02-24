@@ -155,7 +155,7 @@ def index_images(
                 
         # create matrix and index
         matrix = np.array(vectors).reshape(-1, vectorization_dimensionality)
-        matrix = matrix.astype(numpy.float32)
+        matrix = matrix.astype(np.float32)
         index.add(matrix)
 
         # resize images to tiles
