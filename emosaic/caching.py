@@ -7,7 +7,7 @@ if six.PY2:
 else:
 	import pickle
 
-DEFAULT_CACHE_DIR = 'cache'
+DEFAULT_CACHE_DIR = '/cache'
 DEFAULT_CACHE_PATTERN = '*.pkl'
 
 class EmbeddingsCacheConfig(object):
