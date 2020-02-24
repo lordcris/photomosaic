@@ -1,0 +1,7 @@
+# https://github.com/plippe/faiss-docker/blob/master/Dockerfile 
+FROM lordcris/photomosaic
+
+
+COPY requirements.txt /home/requirements.txt
+RUN pip install -r /home/requirements.txt
+COPY * .
