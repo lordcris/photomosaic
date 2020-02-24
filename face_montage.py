@@ -172,7 +172,7 @@ for path in query_paths:
     seen_paths.add(path)
 
 # save as temporary measure
-with open('cache/matches.pkl', 'wb') as pf:
+with open('/cache/matches.pkl', 'wb') as pf:
     pickle.dump(matches, pf)
 
 # now that we have matches, we can actually create our montage
