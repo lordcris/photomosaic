@@ -1,4 +1,4 @@
-# https://github.com/plippe/faiss-docker/blob/master/Dockerfile
+# https://github.com/plippe/faiss-docker/blob/master/Dockerfile 
 FROM nvidia/cuda:8.0-devel-ubuntu16.04
 
 ENV FAISS_CPU_OR_GPU "cpu"
