@@ -3,7 +3,7 @@ FROM nvidia/cuda:8.0-devel-ubuntu16.04
 
 ENV FAISS_CPU_OR_GPU "cpu"
 ENV FAISS_VERSION "1.3.0"
-ENV OPENCV_VERSION "3.4.1"
+ENV OPENCV_VERSION "3.4.8"
 
 RUN apt-get update && apt-get install -y curl bzip2 libgl1-mesa-glx
 
@@ -50,4 +50,3 @@ RUN apt-get update -y && \
 
 COPY requirements.txt /home/requirements.txt
 RUN pip install -r /home/requirements.txt
-RUN echo y | conda remove opencv --force && echo y | conda install opencv
