@@ -1,7 +1,7 @@
 # https://github.com/plippe/faiss-docker/blob/master/Dockerfile 
 FROM nvidia/cuda:8.0-devel-ubuntu16.04
 
-ENV FAISS_CPU_OR_GPU "cpu"
+ENV FAISS_CPU_OR_GPU "gpu"
 ENV FAISS_VERSION "1.3.0"
 ENV OPENCV_VERSION "3.4.8"
 
@@ -50,3 +50,4 @@ RUN apt-get update -y && \
 
 COPY requirements.txt /home/requirements.txt
 RUN pip install -r /home/requirements.txt
+COPY . /
