@@ -2,8 +2,3 @@
 FROM lordcris/photomosaic
 
 COPY . /
-COPY weights /
-COPY scripts /
-COPY media /
-COPY emosaic /
-COPY cache /
