@@ -123,7 +123,7 @@ def generate_aligned_face(
 
 def extract_embeddings(
         face_folder, 
-        downsize=0.25, 
+        downsize=1, 
         face_detect_upsample_multiple=1, 
         num_embedding_jitters=1,
         verbose=0,
@@ -227,7 +227,7 @@ def shape_to_np(shape):
     # return the list of (x, y)-coordinates
     return coords
 
-def detect_faces_dlib(img, weights_path, downsize=0.25, upsample_multiple=1):
+def detect_faces_dlib(img, weights_path, downsize=1, upsample_multiple=1):
     """
     img: np.array of image
     weights_path: path to dlib predictor weights path
