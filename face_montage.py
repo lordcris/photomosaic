@@ -50,7 +50,7 @@ p.add_argument("--sort-by-photo-age", dest='sort_by_photo_age', action='store_tr
 args = p.parse_args()
 
 # some settings
-downsize = 0.25
+downsize = 1
 face_detect_upsample_multiple = 2
 num_embedding_jitters = 5
 interactive = False  # show matches as they come up?
